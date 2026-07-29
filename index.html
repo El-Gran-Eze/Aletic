@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atletic | Gimnasio Premium — Fuerza. Tecnología. Resultados.</title>
+<meta name="description" content="Atletic es el gimnasio premium de alto rendimiento. Entrenamientos personalizados, tecnología de punta y resultados reales. Musculación, CrossFit, Cardio, Funcional, Personal Trainer y Nutrición.">
+<meta name="keywords" content="gimnasio, atletic, musculación, crossfit, cardio, entrenamiento funcional, personal trainer, nutrición, gym premium">
+<meta name="author" content="Atletic Gym">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atletic | Transforma tu cuerpo. Transforma tu vida.">
+<meta property="og:description" content="Entrenamientos personalizados, tecnología y resultados reales en el gimnasio premium Atletic.">
+<meta property="og:image" content="assets/hero-bg.svg">
+<meta property="og:locale" content="es_AR">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== PRELOADER ===================== -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-bars">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <p class="preloader-text">ATLETIC</p>
+</div>
+
+<!-- ===================== SCROLL PROGRESS ===================== -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ===================== CUSTOM CURSOR ===================== -->
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header id="header" class="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="logo" aria-label="Atletic - Inicio">
+      <span class="logo__mark">A</span><span class="logo__text">TLETIC</span>
+    </a>
+
+    <nav id="nav" class="nav" aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link active">Inicio</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#planes" class="nav__link">Planes</a></li>
+        <li><a href="#entrenadores" class="nav__link">Entrenadores</a></li>
+        <li><a href="#galeria" class="nav__link">Galería</a></li>
+        <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar modo claro/oscuro" title="Cambiar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      </button>
+      <a href="#planes" class="btn btn--primary btn--sm">Inscribirme</a>
+      <button id="hamburger" class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav overlay -->
+<div id="mobile-nav" class="mobile-nav">
+  <ul class="mobile-nav__list">
+    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+    <li><a href="#servicios" class="nav__link">Servicios</a></li>
+    <li><a href="#planes" class="nav__link">Planes</a></li>
+    <li><a href="#entrenadores" class="nav__link">Entrenadores</a></li>
+    <li><a href="#galeria" class="nav__link">Galería</a></li>
+    <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+    <li><a href="#contacto" class="nav__link">Contacto</a></li>
+    <li><a href="#planes" class="btn btn--primary">Inscribirme</a></li>
+  </ul>
+</div>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section id="inicio" class="hero">
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="hero__slash" aria-hidden="true"></div>
+
+  <div class="container hero__content" data-reveal>
+    <p class="eyebrow">ENTRENAMIENTO DE ALTO RENDIMIENTO</p>
+    <h1 class="hero__title">
+      TRANSFORMA TU <span class="text-accent">RUTINA.</span><br>
+      TRANSFORMA TU <span class="text-gold">VIDA.</span>
+    </h1>
+    <p class="hero__subtitle">Entrenamientos personalizados, tecnología y resultados reales.</p>
+    <div class="hero__cta">
+      <a href="#contacto" class="btn btn--primary btn--lg ripple">Comenzar</a>
+      <a href="#planes" class="btn btn--outline btn--lg ripple">Ver Planes</a>
+    </div>
+  </div>
+
+  <a href="#estadisticas" class="scroll-down" aria-label="Bajar a la siguiente sección">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===================== ESTADÍSTICAS ===================== -->
+<section id="estadisticas" class="stats">
+  <div class="container stats__grid">
+    <div class="stat" data-reveal>
+      <span class="stat__number" data-target="1200" data-suffix="+">0</span>
+      <span class="stat__label">Socios Activos</span>
+    </div>
+    <div class="stat" data-reveal>
+      <span class="stat__number" data-target="15">0</span>
+      <span class="stat__label">Entrenadores Expertos</span>
+    </div>
+    <div class="stat" data-reveal>
+      <span class="stat__number" data-target="24" data-suffix="h">0</span>
+      <span class="stat__label">Acceso Total</span>
+    </div>
+    <div class="stat" data-reveal>
+      <span class="stat__number" data-target="98" data-suffix="%">0</span>
+      <span class="stat__label">Satisfacción</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section id="servicios" class="services section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>QUÉ OFRECEMOS</p>
+    <h2 class="section__title" data-reveal>Disciplinas para cada <span class="text-accent">objetivo</span></h2>
+
+    <div class="services__grid">
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="20" width="7" height="8" rx="2"/><rect x="37" y="20" width="7" height="8" rx="2"/><rect x="11" y="22" width="26" height="4" rx="1.5"/></svg>
+        </div>
+        <h3>Musculación</h3>
+        <p>Equipamiento de última generación para ganar fuerza, masa muscular y potencia con planes progresivos.</p>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M24 6 L30 20 L44 22 L34 32 L37 44 L24 37 L11 44 L14 32 L4 22 L18 20 Z"/></svg>
+        </div>
+        <h3>CrossFit</h3>
+        <p>Entrenamientos funcionales de alta intensidad que combinan fuerza, resistencia y velocidad.</p>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M24 42s-16-9.6-16-21.5C8 13.6 13.4 8 20 8c2.6 0 5 1.1 4 3 -1 1.9-4 1-4-3 0-4.4 4.4-8 8-8"/><path d="M6 24h6l3-8 4 16 3-10 3 6h9"/></svg>
+        </div>
+        <h3>Cardio</h3>
+        <p>Zona cardiovascular con tecnología conectada para maximizar resistencia y quema calórica.</p>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="24" cy="10" r="5"/><path d="M14 44l4-16-6-4 4-8 8 4 8-4 4 8-6 4 4 16"/></svg>
+        </div>
+        <h3>Entrenamiento Funcional</h3>
+        <p>Movimientos naturales del cuerpo para mejorar movilidad, equilibrio y rendimiento diario.</p>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="24" cy="14" r="8"/><path d="M8 42c0-9.9 7.2-16 16-16s16 6.1 16 16"/></svg>
+        </div>
+        <h3>Personal Trainer</h3>
+        <p>Acompañamiento 1 a 1 con planificación a medida, seguimiento constante y ajustes semanales.</p>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M24 6c8 4 14 4 14 4 0 20-6 30-14 34-8-4-14-14-14-34 0 0 6 0 14-4Z"/><path d="M24 16v16M17 24h14"/></svg>
+        </div>
+        <h3>Nutrición</h3>
+        <p>Planes alimenticios diseñados por profesionales para potenciar tus resultados desde adentro.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLANES ===================== -->
+<section id="planes" class="plans section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>MEMBRESÍAS</p>
+    <h2 class="section__title" data-reveal>Elegí tu <span class="text-gold">plan</span></h2>
+
+    <div class="plans__grid">
+      <article class="plan-card" data-reveal>
+        <h3 class="plan-card__name">Básico</h3>
+        <p class="plan-card__price"><span>$</span>15.000<span class="plan-card__period">/mes</span></p>
+        <ul class="plan-card__list">
+          <li>Acceso a sala de musculación</li>
+          <li>Horario diurno (6:00–16:00)</li>
+          <li>1 evaluación física inicial</li>
+          <li>App de seguimiento básico</li>
+        </ul>
+        <a href="#contacto" class="btn btn--outline btn--full">Elegir</a>
+      </article>
+
+      <article class="plan-card plan-card--featured" data-reveal>
+        <span class="plan-card__badge">Más elegido</span>
+        <h3 class="plan-card__name">Premium</h3>
+        <p class="plan-card__price"><span>$</span>25.000<span class="plan-card__period">/mes</span></p>
+        <ul class="plan-card__list">
+          <li>Acceso ilimitado 24 horas</li>
+          <li>Todas las clases grupales</li>
+          <li>2 sesiones con Personal Trainer</li>
+          <li>Plan nutricional mensual</li>
+          <li>App con métricas avanzadas</li>
+        </ul>
+        <a href="#contacto" class="btn btn--primary btn--full ripple">Elegir</a>
+      </article>
+
+      <article class="plan-card" data-reveal>
+        <h3 class="plan-card__name">Elite</h3>
+        <p class="plan-card__price"><span>$</span>40.000<span class="plan-card__period">/mes</span></p>
+        <ul class="plan-card__list">
+          <li>Todo lo del plan Premium</li>
+          <li>Personal Trainer ilimitado</li>
+          <li>Nutricionista dedicado</li>
+          <li>Acceso a zona VIP y sauna</li>
+          <li>Evaluaciones mensuales completas</li>
+        </ul>
+        <a href="#contacto" class="btn btn--outline btn--full">Elegir</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ENTRENADORES ===================== -->
+<section id="entrenadores" class="trainers section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>NUESTRO EQUIPO</p>
+    <h2 class="section__title" data-reveal>Entrenadores <span class="text-accent">expertos</span></h2>
+
+    <div class="trainers__grid">
+      <article class="trainer-card" data-reveal>
+        <div class="trainer-card__photo">
+          <img src="https://i.pinimg.com/1200x/33/2a/61/332a614c0193e7ddf3e6b895855cfa68.jpg" alt="Entrenador Matías Torres, especialista en musculación" loading="lazy" width="500" height="600">
+        </div>
+        <div class="trainer-card__info">
+          <h3>Matías Torres</h3>
+          <p>Musculación &amp; Fuerza</p>
+          <div class="trainer-card__social">
+            <a href="#" aria-label="Instagram de Matías Torres">IG</a>
+            <a href="#" aria-label="LinkedIn de Matías Torres">IN</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="trainer-card" data-reveal>
+        <div class="trainer-card__photo">
+          <img src="assets/fotoentrenadora.jpg" alt="Entrenadora Lucía Giménez, especialista en CrossFit" loading="lazy" width="500" height="600">
+        </div>
+        <div class="trainer-card__info">
+          <h3>Lucía Giménez</h3>
+          <p>CrossFit &amp; Funcional</p>
+          <div class="trainer-card__social">
+            <a href="#" aria-label="Instagram de Lucía Giménez">IG</a>
+            <a href="#" aria-label="LinkedIn de Lucía Giménez">IN</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="trainer-card" data-reveal>
+        <div class="trainer-card__photo">
+          <img src="assets/trainer-3.svg" alt="Entrenador Rodrigo Silva, especialista en cardio" loading="lazy" width="500" height="600">
+        </div>
+        <div class="trainer-card__info">
+          <h3>Rodrigo Silva</h3>
+          <p>Cardio &amp; Resistencia</p>
+          <div class="trainer-card__social">
+            <a href="#" aria-label="Instagram de Rodrigo Silva">IG</a>
+            <a href="#" aria-label="LinkedIn de Rodrigo Silva">IN</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="trainer-card" data-reveal>
+        <div class="trainer-card__photo">
+          <img src="assets/trainer-4.svg" alt="Entrenadora Camila Ferro, nutricionista deportiva" loading="lazy" width="500" height="600">
+        </div>
+        <div class="trainer-card__info">
+          <h3>Camila Ferro</h3>
+          <p>Nutrición Deportiva</p>
+          <div class="trainer-card__social">
+            <a href="#" aria-label="Instagram de Camila Ferro">IG</a>
+            <a href="#" aria-label="LinkedIn de Camila Ferro">IN</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERÍA ===================== -->
+<section id="galeria" class="gallery section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>NUESTRAS INSTALACIONES</p>
+    <h2 class="section__title" data-reveal>Galería <span class="text-gold">Atletic</span></h2>
+
+    <div class="gallery__grid" id="gallery-grid">
+      <button class="gallery__item" data-reveal data-index="0"><img src="assets/gallery-1.svg" alt="Sala de pesas Atletic" loading="lazy" width="600" height="600"></button>
+      <button class="gallery__item" data-reveal data-index="1"><img src="assets/gallery-2.svg" alt="Box de CrossFit Atletic" loading="lazy" width="600" height="600"></button>
+      <button class="gallery__item" data-reveal data-index="2"><img src="assets/gallery-3.svg" alt="Zona de cardio Atletic" loading="lazy" width="600" height="600"></button>
+      <button class="gallery__item" data-reveal data-index="3"><img src="assets/gallery-4.svg" alt="Área funcional Atletic" loading="lazy" width="600" height="600"></button>
+      <button class="gallery__item" data-reveal data-index="4"><img src="assets/gallery-5.svg" alt="Sesión de entrenamiento personalizado" loading="lazy" width="600" height="600"></button>
+      <button class="gallery__item" data-reveal data-index="5"><img src="assets/gallery-6.svg" alt="Comunidad Atletic entrenando en grupo" loading="lazy" width="600" height="600"></button>
+      <button class="gallery__item" data-reveal data-index="6"><img src="assets/gallery-7.svg" alt="Equipamiento de última generación" loading="lazy" width="600" height="600"></button>
+      <button class="gallery__item" data-reveal data-index="7"><img src="assets/gallery-8.svg" alt="Resultados reales de socios Atletic" loading="lazy" width="600" height="600"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" hidden>
+  <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar visor">&times;</button>
+  <button class="lightbox__prev" id="lightbox-prev" aria-label="Imagen anterior">&#10094;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox__next" id="lightbox-next" aria-label="Imagen siguiente">&#10095;</button>
+</div>
+
+<!-- ===================== TESTIMONIOS ===================== -->
+<section id="testimonios" class="testimonials section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>LO QUE DICEN NUESTROS SOCIOS</p>
+    <h2 class="section__title" data-reveal>Testimonios <span class="text-accent">reales</span></h2>
+
+    <div class="testimonial-carousel" id="testimonial-carousel">
+      <div class="testimonial-track" id="testimonial-track">
+        <article class="testimonial-slide">
+          <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-text">"En seis meses cambié completamente mi físico y mi energía diaria. El equipo de Atletic te acompaña en cada paso."</p>
+          <div class="testimonial-author">
+            <img src="assets/avatar-1.svg" alt="" loading="lazy" width="60" height="60">
+            <div><strong>Juan Pérez</strong><span>Socio Premium — 8 meses</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide">
+          <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-text">"La tecnología y el seguimiento personalizado marcan la diferencia. Nunca entrené en un lugar tan profesional."</p>
+          <div class="testimonial-author">
+            <img src="assets/avatar-2.svg" alt="" loading="lazy" width="60" height="60">
+            <div><strong>Milagros Sosa</strong><span>Socia Elite — 1 año</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide">
+          <div class="testimonial-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+          <p class="testimonial-text">"El plan de nutrición sumado al entrenamiento funcional me devolvió la movilidad que había perdido."</p>
+          <div class="testimonial-author">
+            <img src="assets/avatar-3.svg" alt="" loading="lazy" width="60" height="60">
+            <div><strong>Diego Ramírez</strong><span>Socio Básico — 4 meses</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-slide">
+          <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-text">"Ambiente motivador, entrenadores atentos y resultados que se notan cada semana. Totalmente recomendado."</p>
+          <div class="testimonial-author">
+            <img src="assets/avatar-4.svg" alt="" loading="lazy" width="60" height="60">
+            <div><strong>Ana López</strong><span>Socia Premium — 6 meses</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="testimonial-dots" id="testimonial-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CALCULADORA IMC ===================== -->
+<section id="imc" class="imc section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>HERRAMIENTA GRATUITA</p>
+    <h2 class="section__title" data-reveal>Calculá tu <span class="text-gold">IMC</span></h2>
+
+    <div class="imc__card" data-reveal>
+      <form id="imc-form" class="imc__form" novalidate>
+        <div class="field">
+          <label for="imc-height">Altura (cm)</label>
+          <input type="number" id="imc-height" name="height" min="100" max="250" step="1" placeholder="Ej: 175" required inputmode="numeric">
+        </div>
+        <div class="field">
+          <label for="imc-weight">Peso (kg)</label>
+          <input type="number" id="imc-weight" name="weight" min="30" max="300" step="0.1" placeholder="Ej: 70" required inputmode="decimal">
+        </div>
+        <button type="submit" class="btn btn--primary ripple">Calcular IMC</button>
+      </form>
+
+      <div id="imc-result" class="imc__result" aria-live="polite" hidden>
+        <div class="imc__gauge">
+          <span id="imc-value">0</span>
+        </div>
+        <p id="imc-status" class="imc__status">—</p>
+        <p id="imc-desc" class="imc__desc"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HORARIOS ===================== -->
+<section id="horarios" class="schedule section">
+  <div class="container">
+    <p class="eyebrow" data-reveal>PLANIFICÁ TU SEMANA</p>
+    <h2 class="section__title" data-reveal>Horarios de <span class="text-accent">clases</span></h2>
+
+    <div class="schedule__table-wrap" data-reveal>
+      <table class="schedule__table">
+        <thead>
+          <tr>
+            <th scope="col">Día</th>
+            <th scope="col">06:00 – 09:00</th>
+            <th scope="col">10:00 – 13:00</th>
+            <th scope="col">17:00 – 20:00</th>
+            <th scope="col">20:00 – 23:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Lunes</th><td>Musculación</td><td>Funcional</td><td>CrossFit</td><td>Cardio HIIT</td></tr>
+          <tr><th scope="row">Martes</th><td>Cardio</td><td>Personal Trainer</td><td>Funcional</td><td>Musculación</td></tr>
+          <tr><th scope="row">Miércoles</th><td>CrossFit</td><td>Musculación</td><td>Cardio HIIT</td><td>Funcional</td></tr>
+          <tr><th scope="row">Jueves</th><td>Funcional</td><td>Personal Trainer</td><td>Musculación</td><td>CrossFit</td></tr>
+          <tr><th scope="row">Viernes</th><td>Musculación</td><td>Cardio</td><td>CrossFit</td><td>Funcional</td></tr>
+          <tr><th scope="row">Sábado</th><td>CrossFit</td><td>Funcional</td><td>Cardio</td><td>—</td></tr>
+          <tr><th scope="row">Domingo</th><td>Yoga &amp; Movilidad</td><td>Libre</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto" class="contact section">
+  <div class="container contact__grid">
+    <div class="contact__info" data-reveal>
+      <p class="eyebrow">HABLEMOS</p>
+      <h2 class="section__title">Empezá hoy tu <span class="text-gold">transformación</span></h2>
+      <p class="contact__text">Completá el formulario y un asesor de Atletic te va a contactar dentro de las próximas 24 horas.</p>
+
+      <ul class="contact__details">
+        <li><strong>Dirección:</strong> Av. Libertador 4200, Buenos Aires</li>
+        <li><strong>Teléfono:</strong> +54 11 4567-8900</li>
+        <li><strong>Email:</strong> hola@atletic.com</li>
+        <li><strong>Horario:</strong> Lunes a Domingo — 24 horas</li>
+      </ul>
+
+      <div class="contact__map">
+        <iframe
+          title="Ubicación de Atletic en el mapa"
+          src="https://www.google.com/maps?q=Buenos+Aires,+Argentina&output=embed"
+          width="100%" height="260" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <form id="contact-form" class="contact__form" data-reveal novalidate>
+      <div class="field">
+        <label for="cf-nombre">Nombre</label>
+        <input type="text" id="cf-nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name">
+        <span class="field__error" data-error-for="cf-nombre"></span>
+      </div>
+      <div class="field">
+        <label for="cf-apellido">Apellido</label>
+        <input type="text" id="cf-apellido" name="apellido" placeholder="Tu apellido" required autocomplete="family-name">
+        <span class="field__error" data-error-for="cf-apellido"></span>
+      </div>
+      <div class="field">
+        <label for="cf-email">Correo electrónico</label>
+        <input type="email" id="cf-email" name="email" placeholder="tu@email.com" required autocomplete="email">
+        <span class="field__error" data-error-for="cf-email"></span>
+      </div>
+      <div class="field">
+        <label for="cf-telefono">Teléfono</label>
+        <input type="tel" id="cf-telefono" name="telefono" placeholder="+54 9 11 1234-5678" required autocomplete="tel">
+        <span class="field__error" data-error-for="cf-telefono"></span>
+      </div>
+      <div class="field field--full">
+        <label for="cf-mensaje">Mensaje</label>
+        <textarea id="cf-mensaje" name="mensaje" rows="4" placeholder="Contanos tu objetivo..." required></textarea>
+        <span class="field__error" data-error-for="cf-mensaje"></span>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--full ripple">Enviar mensaje</button>
+
+      <div id="form-success" class="form-message form-message--success" role="status" hidden>
+        ✔ ¡Mensaje enviado! Te contactaremos pronto.
+      </div>
+      <div id="form-error" class="form-message form-message--error" role="alert" hidden>
+        ✖ Revisá los campos marcados antes de enviar.
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#inicio" class="logo logo--footer"><span class="logo__mark">A</span><span class="logo__text">TLETIC</span></a>
+      <p>Fuerza. Tecnología. Resultados reales. Tu mejor versión empieza acá.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Atletic en Instagram">IG</a>
+        <a href="#" aria-label="Atletic en Facebook">FB</a>
+        <a href="#" aria-label="Atletic en TikTok">TT</a>
+        <a href="#" aria-label="Atletic en YouTube">YT</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Enlaces rápidos</h4>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#entrenadores">Entrenadores</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Información</h4>
+      <ul>
+        <li>Av. Libertador 4200, CABA</li>
+        <li>+54 11 4567-8900</li>
+        <li>hola@atletic.com</li>
+        <li>Abierto 24/7</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Atletic. Todos los derechos reservados.</p>
+  </div>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
